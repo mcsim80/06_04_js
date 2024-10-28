@@ -15,6 +15,10 @@ jobs:
       # TODO: укажите шаги по:
       # 1. Установке зависимостей
       # 2. Сборке проекта  
+	run: |
+	    npm install
+	    npm run build
+
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
